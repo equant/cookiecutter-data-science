@@ -1,4 +1,35 @@
-docs/site/
+# find . -size +80M | cat >> .gitignore
 
-# OSX Junk
-.DS_Store
+*.swp
+*.swo
+tags
+
+# LaTeX temporary files
+*.aux
+*.log
+*.toc
+*.synctex.gz
+
+*.bbl
+*.blg
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# CASA stuff:
+*.log
+*.last
+
+*.old
+old/
