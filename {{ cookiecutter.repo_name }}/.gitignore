@@ -1,14 +1,10 @@
+# find . -size +80M | cat >> .gitignore
+
+/data/raw
+
 *.swp
 *.swo
 tags
-
-
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-
-# C extensions
-*.so
 
 # LaTeX temporary files
 *.aux
@@ -19,6 +15,15 @@ __pycache__/
 *.bbl
 *.blg
 
-/data/interim
-/data/raw
-/models
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# CASA stuff:
+*.log
+*.last
+
